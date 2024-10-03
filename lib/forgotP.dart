@@ -96,7 +96,7 @@ class forgotP extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 TextButton(
-                  onPressed: () {   //move button from forgot page to Login
+                  onPressed: () {
                     Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => const LoginPage()),

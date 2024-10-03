@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// Import the cart page
-// Import the favorites page
 
 class BNavbar extends StatelessWidget {
   final int currentIndex;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'model/cart_model.dart'; // Import the cart model
+import 'model/cart_model.dart';
 
 class ShoeDetailPage extends StatefulWidget {
   final Map<String, dynamic> shoe;
@@ -54,12 +54,12 @@ class _ShoeDetailPageState extends State<ShoeDetailPage> {
                 style: const TextStyle(fontSize: 20, color: Colors.green),
               ),
               const SizedBox(height: 10),
-              // Dropdown for selecting size
+
               DropdownButton<String>(
                 value: selectedSize,
                 onChanged: (String? newSize) {
                   setState(() {
-                    selectedSize = newSize ?? 'N/A'; // Update size
+                    selectedSize = newSize ?? 'N/A';
                   });
                 },
                 items: <String>['N/A', 'US 4', 'US 5', 'US 6', 'US 7','US 8','US 9','US 10']
@@ -91,9 +91,6 @@ class _ShoeDetailPageState extends State<ShoeDetailPage> {
                   ElevatedButton(
                     onPressed: () {
                       Navigator.pushNamed(context, '/payment');
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text('Buying ${widget.shoe['name']}')),
-                      );
                     },
                     child: const Text('Buy Now'),
                     style: ElevatedButton.styleFrom(

@@ -130,7 +130,6 @@ class PaymentPage extends StatelessWidget {
 
                       ) {
                     Navigator.pushNamed(context, '/confirmpayment');
-                    // Handle payment submission logic here
                   },
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(

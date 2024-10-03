@@ -23,13 +23,13 @@ class FavoritesPage extends StatelessWidget {
             crossAxisCount: 2, // Two cards in each row
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
-            childAspectRatio: 0.7, // Adjust card height
+            childAspectRatio: 0.7, //card height
           ),
           itemCount: shoes.length,
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
-                // Navigate to the ShoeDetailPage when the card is tapped
+
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -48,7 +48,7 @@ class FavoritesPage extends StatelessWidget {
                     // Display the shoe image
                     Image.network(
                       shoes[index]['imageURL'],
-                      height: 100, // Set the height for the image
+                      height: 100,
                       fit: BoxFit.cover, // Maintain aspect ratio
                     ),
                     const SizedBox(height: 10),

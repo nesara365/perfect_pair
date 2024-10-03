@@ -10,7 +10,7 @@ class PerfectPairHomePage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: const AssetImage('images/background.jpg'),     //background image calling
+            image: const AssetImage('images/background.jpg'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
               Colors.black.withOpacity(0.6),
@@ -24,7 +24,7 @@ class PerfectPairHomePage extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(16.0),
-                decoration: BoxDecoration(          //black opaque box behind
+                decoration: BoxDecoration(
                   color: Colors.black.withOpacity(0.7),
                   borderRadius: BorderRadius.circular(8.0),
                 ),
@@ -45,7 +45,7 @@ class PerfectPairHomePage extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(
-                          context,                      //login page route
+                          context,
                           MaterialPageRoute(builder: (context) => const LoginPage()),
                         );
                       },

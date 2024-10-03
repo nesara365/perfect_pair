@@ -19,10 +19,10 @@ class ConfirmPaymentPage extends StatelessWidget {
               height: 200,
               decoration: BoxDecoration(
                 image: const DecorationImage(
-                  image: AssetImage('images/tick.png'), // Use your local image asset
-                  fit: BoxFit.cover, // Ensures the image covers the container
+                  image: AssetImage('images/tick.png'),
+                  fit: BoxFit.cover,
                 ),
-                borderRadius: BorderRadius.circular(10), // Rounded corners for the image
+                borderRadius: BorderRadius.circular(10),
               ),
             ),
             const SizedBox(height: 20), // Spacing between image and text

@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'model/cart_model.dart'; // Import the cart model
-import 'controller/payment_controller.dart'; // Import the PaymentController
+import 'model/cart_model.dart';
+
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final PaymentController paymentController = Get.put(PaymentController()); // Initialize PaymentController
 
     return Scaffold(
       body: ValueListenableBuilder(
@@ -57,7 +56,7 @@ class CartPage extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () {
                         // Trigger the payment process
-                        Navigator.pushNamed(context, '/payment'); // Navigate to the PaymentPage
+                        Navigator.pushNamed(context, '/payment');
                       },
                       child: const Text('Checkout'),
                       style: ElevatedButton.styleFrom(

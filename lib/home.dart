@@ -1,15 +1,15 @@
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // Import for loading assets
-import 'package:battery_plus/battery_plus.dart'; // Import the battery_plus package
-import 'navbar.dart'; // Import the new separated navbar
-import 'cart.dart'; // Import the cart page
-import 'fav.dart'; // Import the favorites page
+import 'package:flutter/services.dart';
+import 'package:battery_plus/battery_plus.dart';
+import 'navbar.dart';
+import 'cart.dart';
+import 'fav.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'abtus.dart'; // Import the About page
-import 'bnavbar.dart'; // Import the new BottomNavigationBar
-import 'shoe_detail_page.dart'; // Import the shoe detail page
+import 'abtus.dart';
+import 'bnavbar.dart';
+import 'shoe_detail_page.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -22,10 +22,10 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
   String selectedCategory = 'All'; // Default category is 'All'
   List<Map<String, dynamic>> favoriteShoes = []; // List to hold favorite shoes
-  List<Map<String, dynamic>> shoes = []; // List to hold shoe data
-  String searchQuery = ''; // Search query for filtering shoes
+  List<Map<String, dynamic>> shoes = [];
+  String searchQuery = ''; //
 
-  int batteryLevel = 0; // Variable to hold the battery level
+  int batteryLevel = 0;
   bool _isSearching = false; // Flag to toggle search bar visibility
   TextEditingController _searchController = TextEditingController(); // Controller for search input
 
@@ -55,10 +55,10 @@ class _HomeState extends State<Home> {
         return {
           'name': shoe['name'],
           'category': shoe['category'],
-          'size': 'N/A', // You may want to handle sizes in your JSON
+          'size': 'N/A',
           'price': '\$${shoe['price']}',
           'isFavorite': false,
-          'imageURL': shoe['imageURL'], // Add image if needed
+          'imageURL': shoe['imageURL'],
         };
       }).toList();
     });
@@ -91,7 +91,7 @@ class _HomeState extends State<Home> {
     setState(() {
       _isSearching = false;
       _searchController.clear();
-      searchQuery = ''; // Reset search query
+      searchQuery = '';
     });
   }
 
@@ -103,7 +103,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    // Filter shoes based on selected category and search query
+    // Filter shoes based on gender
     List<Map<String, dynamic>> filteredShoes = shoes.where((shoe) {
       final matchesCategory = selectedCategory == 'All' || shoe['category'] == selectedCategory;
       final matchesSearch = shoe['name'].toLowerCase().contains(searchQuery.toLowerCase());
@@ -120,7 +120,7 @@ class _HomeState extends State<Home> {
             border: InputBorder.none,
           ),
           autofocus: true,
-          onChanged: _updateSearchQuery, // Update the search query as the user types
+          onChanged: _updateSearchQuery,
         )
             : Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

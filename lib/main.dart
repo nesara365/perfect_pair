@@ -40,7 +40,7 @@ class PerfectPairApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "Montserrat",
       ),
-      darkTheme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
       initialRoute: '/',
       routes: {

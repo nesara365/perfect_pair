@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class Navbar extends StatelessWidget {
   const Navbar({super.key});
 
-   // Require userName in the constructor
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +25,7 @@ class Navbar extends StatelessWidget {
             child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 8), // Add some spacing
+                SizedBox(height: 8),
 
               ],
             ),

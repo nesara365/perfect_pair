@@ -109,7 +109,7 @@ class AboutPageState extends State<AboutPage> {
                 fontWeight: FontWeight.bold,
               ),),
             Container(
-              height: 200, // Adjust height as needed
+              height: 200,
               child: PageView(
                 children: [
                   Image.asset('images/shop1.JPG', fit: BoxFit.cover),
@@ -216,7 +216,7 @@ class AboutPageState extends State<AboutPage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 2),
             GestureDetector(
               onTap: _launchPhoneDialer,
               child: Text(
@@ -227,7 +227,7 @@ class AboutPageState extends State<AboutPage> {
                 ),
               ),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 10),
 
             Center(
               child: Text(

@@ -1,4 +1,3 @@
-// cart_model.dart
 import 'package:flutter/material.dart';
 
 class CartModel extends ChangeNotifier {
@@ -7,7 +6,6 @@ class CartModel extends ChangeNotifier {
   List<Map<String, dynamic>> get items => _items;
 
   void addToCart(Map<String, dynamic> shoe, String size) {
-    // Add size to the shoe data
     final item = {
       'name': shoe['name'],
       'price': shoe['price'],
@@ -24,4 +22,4 @@ class CartModel extends ChangeNotifier {
   }
 }
 
-final cartModel = CartModel(); // Create a singleton instance
+final cartModel = CartModel();

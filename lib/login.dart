@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'auth_service.dart';
 import 'home.dart';
 import 'forgotP.dart';
-import 'register.dart'; // <-- Add this line to import the Register class
+import 'register.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -170,7 +170,7 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Register()), // Navigate to the Register page
+                      MaterialPageRoute(builder: (context) => const Register()),
                     );
                   },
                   child: const Text(
