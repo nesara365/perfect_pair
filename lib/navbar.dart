@@ -33,7 +33,7 @@ class Navbar extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.home),
             title: const Text('Home'),
-            onTap: () => print('Share tapped'),
+            onTap: () => Navigator.pushNamed(context, '/home'),
           ),
           ListTile(
             leading: const Icon(Icons.shopping_cart),
@@ -44,6 +44,11 @@ class Navbar extends StatelessWidget {
             leading: const Icon(Icons.favorite),
             title: const Text('Favorites'),
             onTap: () => Navigator.pushNamed(context, '/favorites'),
+          ),
+          ListTile(
+            leading: const Icon(Icons.favorite),
+            title: const Text('Profile'),
+            onTap: () => Navigator.pushNamed(context, '/profile'),
           ),
           ListTile(
             leading: const Icon(Icons.description),

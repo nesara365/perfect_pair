@@ -6,6 +6,7 @@ import 'package:battery_plus/battery_plus.dart';
 import 'navbar.dart';
 import 'cart.dart';
 import 'fav.dart';
+import 'profile.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'abtus.dart';
 import 'bnavbar.dart';
@@ -274,7 +275,9 @@ class _HomeState extends State<Home> {
         shoes: favoriteShoes,
         onToggleFavorite: _toggleFavorite,
       )
-          : const AboutPage(), // Display the About page
+          : _selectedIndex == 3 // Add this case for Profile Page
+          ? const ProfilePage() // Display the Profile page
+          : const AboutPage(), // Default case // Display the About page
       bottomNavigationBar: BNavbar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,

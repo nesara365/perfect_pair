@@ -5,6 +5,7 @@ import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:madf/firebase_options.dart';
 import 'package:madf/cart.dart';
 import 'package:madf/abtus.dart';
+import 'package:madf/profile.dart';
 import 'forgotP.dart';
 import 'home.dart';
 import 'landing.dart';
@@ -52,6 +53,7 @@ class PerfectPairApp extends StatelessWidget {
         '/cart': (context) => const CartPage(),
         '/about': (context) => const AboutPage(),
         '/payment': (context) => const PaymentPage(),
+        '/profile': (context) => const ProfilePage(),
         '/confirmpayment': (context) => const ConfirmPaymentPage(),
       },
     );

@@ -34,6 +34,27 @@ class ConfirmPaymentPage extends StatelessWidget {
                 color: Colors.green, // Change text color to green
               ),
             ),
+            const SizedBox(height: 30), // Spacing between text and button
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to Home when button is pressed
+                Navigator.pushNamed(context, '/home');
+              },
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                backgroundColor: Colors.blueAccent, // Button color
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
+              child: const Text(
+                'Go to Home',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
+              ),
+            ),
           ],
         ),
       ),

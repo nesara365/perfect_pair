@@ -50,6 +50,7 @@ dependencies:
   google_maps_flutter: ^2.2.5
   flutter_polyline_points: ^2.1.0
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
