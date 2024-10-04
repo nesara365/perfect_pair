@@ -46,7 +46,7 @@ class Navbar extends StatelessWidget {
             onTap: () => Navigator.pushNamed(context, '/favorites'),
           ),
           ListTile(
-            leading: const Icon(Icons.favorite),
+            leading: const Icon(Icons.person),
             title: const Text('Profile'),
             onTap: () => Navigator.pushNamed(context, '/profile'),
           ),
