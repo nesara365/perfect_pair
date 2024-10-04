@@ -45,9 +45,6 @@ class ProfilePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
-
-              // Edit Profile Button
-
             ],
           ),
         ),
